@@ -103,6 +103,30 @@ $permisoncotiz = ControllerPerfil::ctrMostrarMenuPermisos(72, $idPerfil); // ver
 
                 <?php endif ?>
 
+                <?php if ($_GET["ruta"] == "actas") : ?>
+
+                <li class="nav-item">
+                    <a href="<?php echo $url; ?>actas" class="nav-link active">
+                        <i class="nav-icon fas fa-file-signature"></i>
+                        <p>
+                            Carga de Actas
+                        </p>
+                    </a>
+                </li>
+
+                <?php else : ?>
+
+                <li class="nav-item">
+                    <a href="<?php echo $url; ?>actas" class="nav-link">
+                        <i class="nav-icon fas fa-file-signature"></i>
+                        <p>
+                            Carga de Actas
+                        </p>
+                    </a>
+                </li>
+
+                <?php endif ?>
+
                 <!-- =============================================
           MENU INICIO / FINAL
           ============================================= -->
@@ -1074,6 +1098,15 @@ $permisoncotiz = ControllerPerfil::ctrMostrarMenuPermisos(72, $idPerfil); // ver
                                                                 <i class="nav-icon fas fa-tachometer-alt"></i>
                                                                 <p>
                                                                     Inicio
+                                                                </p>
+                                                            </a>
+                                                        </li>
+
+                                                        <li class="nav-item">
+                                                            <a href="<?php echo $url; ?>actas" class="nav-link">
+                                                                <i class="nav-icon fas fa-file-signature"></i>
+                                                                <p>
+                                                                    Carga de Actas
                                                                 </p>
                                                             </a>
                                                         </li>
