@@ -157,7 +157,8 @@ if (isset($_SESSION["iniciarSesion"]) && $_SESSION["iniciarSesion"] == true) {
       $ruta[0] == "salir" ||
       $ruta[0] == "informacion" ||
       $ruta[0] == "configuracion" ||
-      $ruta[0] == "perfil"
+      $ruta[0] == "perfil" ||
+      $ruta[0] == "actas"
 
     ) {
 

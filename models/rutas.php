@@ -2,15 +2,15 @@
 
 class Ruta{
 
-	/*=============================================
-	RUTA LADO DEL CLIENTE
-	=============================================*/	
+        /*=============================================
+        RUTA LADO DEL CLIENTE
+        =============================================*/
 
-	public function ctrRuta(){
+        public static function ctrRuta(){
 
-	
-	    //return "http://localhost:8080/trabajos/SystemPos/";
-		return "http://localhost/neu/";
-	}
-   
+
+            //return "http://localhost:8080/trabajos/SystemPos/";
+                return "http://localhost/neu/";
+        }
+
 }

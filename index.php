@@ -18,6 +18,7 @@ require_once "controllers/deposito.controller.php";
 require_once "controllers/caja.controller.php";
 require_once "controllers/dashboard.controller.php";
 require_once "controllers/configuracion.controller.php";
+require_once "controllers/actas.controller.php";
 
 require_once "models/usuarios.model.php";
 require_once "models/almacen.model.php";
@@ -36,6 +37,7 @@ require_once "models/deposito.model.php";
 require_once "models/caja.model.php";
 require_once "models/dashboard.model.php";
 require_once "models/configuracion.model.php";
+require_once "models/actas.model.php";
 
 
 require_once "models/rutas.php";
