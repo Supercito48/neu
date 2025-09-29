@@ -127,7 +127,7 @@ class ModelProducto
 												WHERE p.codigoBarras = :codigoProducto");
 		//AND c.idAlmacen = :idAlmacen
 
-		$stmt->bindParam(":codigoProducto", $codigoProducto, PDO::PARAM_INT);
+                $stmt->bindParam(":codigoProducto", $codigoProducto, PDO::PARAM_STR);
 		//$stmt -> bindParam(":idAlmacen",$idAlmacen,PDO::PARAM_INT);
 		$stmt->execute();
 		return $stmt->fetch(PDO::FETCH_OBJ);
@@ -175,7 +175,7 @@ class ModelProducto
 												AND i.stock > 0");
 
 
-		$stmt->bindParam(":codigoProducto", $codigoProducto, PDO::PARAM_INT);
+                $stmt->bindParam(":codigoProducto", $codigoProducto, PDO::PARAM_STR);
 		$stmt->bindParam(":idAlmacen", $idAlmacen, PDO::PARAM_INT);
 		$stmt->execute();
 		return $stmt->fetch(PDO::FETCH_OBJ);
